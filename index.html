@@ -1,21 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeremia Lim | Computer Science ePortfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeremia Lim | Computer Science ePortfolio</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f6f7fb;
-      color: #222;
-      line-height: 1.7;
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f7fb;
+    color: #222;
+    line-height: 1.7;
+}
+
+header {
+    background: #202938;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+header p {
+    margin: 8px 0 0;
+    font-size: 18px;
+}
+
+nav {
+    background: white;
+    text-align: center;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+nav a {
+    color: #202938;
+    text-decoration: none;
+    margin: 0 13px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 950px;
+    margin: 40px auto;
+    background: white;
+    padding: 45px;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0,0,0,.07);
+}
+
+h2 {
+    color: #202938;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #35445d;
+    margin-top: 32px;
+}
+
+.portfolio-links {
+    margin-top: 40px;
+    padding: 25px;
+    background: #f1f3f8;
+    border-radius: 8px;
+}
+
+.portfolio-links a {
+    display: block;
+    margin: 10px 0;
+    color: #1f5fbf;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+}
+
+@media (max-width: 700px) {
+    main {
+        margin: 20px;
+        padding: 25px;
     }
 
-    header {
-      background: #202938;
-      color: white;
-      text-align: center;
-      padding: 55px 20px;
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Jeremia Lim</h1>
+    <p>Computer Science ePortfolio | Software Engineering</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="code-review.html">Code Review</a>
+    <a href="software-design.html">Software Design</a>
+    <a href="algorithms.html">Algorithms &amp; Data Structures</a>
+    <a href="databases.html">Databases</a>
+</nav>
+
+<main>
+
+<h2>Professional Self-Assessment</h2>
+
+<p>
+Completing the Bachelor of Science in Computer Science program at Southern New Hampshire University has transformed the way I approach technology, problem-solving, and my future as a software professional. When I began the program, I viewed programming primarily as the process of writing code that could accomplish a particular task. Throughout my coursework, however, I learned that professional software development requires much more than making a program work. It requires thoughtful design, effective communication, collaboration, efficient algorithms, reliable data management, security awareness, testing, and the ability to evaluate and improve an existing solution. Developing my ePortfolio gave me the opportunity to bring these skills together and demonstrate how I have grown from completing individual programming assignments into approaching problems with the mindset of a software engineer.
+</p>
+
+<h3>Collaboration and Communication</h3>
+
+<p>
+One of the most important areas of growth throughout the program has been my ability to collaborate and communicate within technical environments. Computer science solutions rarely exist in isolation. Developers must understand requirements, explain technical decisions, receive feedback, and communicate with people who may have different levels of technical knowledge. Through discussion assignments, project planning, code reviews, documentation, and presentations, I learned how important it is to adapt technical communication to the intended audience.
+</p>
+
+<p>
+My CS 499 code review was particularly valuable because I had to examine an existing application, identify weaknesses, explain why those weaknesses mattered, and propose enhancements before implementing them. Rather than simply changing the code, I had to communicate the reasoning behind my decisions as if I were explaining the project to peers or a manager.
+</p>
+
+<h3>Data Structures and Algorithms</h3>
+
+<p>
+Data structures and algorithms were another major area of development during the program. Earlier in my education, I often focused on whether a program produced the correct result. My later coursework taught me to also consider how efficiently the program reaches that result. I gained experience working with structures such as arrays, lists, trees, and other collections while considering searching, sorting, iteration, and computational efficiency.
+</p>
+
+<p>
+My work with a binary search tree demonstrated how selecting an appropriate data structure can make information retrieval more organized and efficient. These experiences taught me to evaluate computing solutions based not only on functionality but also on performance, scalability, and the trade-offs associated with different approaches.
+</p>
+
+<h3>Software Engineering</h3>
+
+<p>
+Software engineering has become one of the strongest areas represented by my coursework and ePortfolio. Through projects involving Android development, full-stack applications, object-oriented programming, and software architecture, I learned to divide larger problems into manageable components.
+</p>
+
+<p>
+My Android Inventory Management application is a strong example of this progression. The original application was created during CS 360: Mobile Architecture and Programming and provided core inventory-management functionality, including user login, adding inventory items, editing quantities, deleting items, and managing notification permissions.
+</p>
+
+<p>
+Returning to the project during CS 499 allowed me to evaluate it from a much more experienced perspective. I identified opportunities to improve its architecture, organization, maintainability, data handling, and overall design. Enhancing an existing application also taught me the importance of modularity and designing software that can continue evolving over time.
+</p>
+
+<h3>Database Development</h3>
+
+<p>
+Database development has also played an important role in my growth as a computer science student. Throughout the program, I worked with relational and nonrelational approaches to data management and learned that storing information effectively requires much more than simply saving values.
+</p>
+
+<p>
+My coursework gave me experience with SQL, SQLite, MongoDB, CRUD operations, persistent storage, database organization, and the interaction between application logic and stored data. During my CS 499 database enhancement, I continued developing this knowledge by improving the persistence layer of my Android Inventory application using a more structured database architecture.
+</p>
+
+<h3>Security</h3>
+
+<p>
+Security became equally important as my technical abilities developed. CS 405: Secure Coding was especially influential in shaping how I evaluate software. Working with vulnerabilities such as SQL injection and buffer-related problems demonstrated how seemingly small development decisions can create serious security consequences.
+</p>
+
+<p>
+I learned that security should influence requirements, architecture, input handling, data management, testing, and maintenance from the beginning of the development process. Practices such as validating input, limiting unnecessary permissions, protecting stored information, identifying vulnerable dependencies, and testing unexpected conditions became part of the way I evaluate software.
+</p>
+
+<h3>Professional Growth</h3>
+
+<p>
+Other projects throughout the Computer Science program expanded my abilities beyond traditional application development. My work with machine learning and reinforcement learning introduced me to experimentation, parameter selection, performance evaluation, and iterative improvement. Coursework involving computer graphics, networking, reverse engineering, mobile development, databases, and secure coding further broadened my understanding of the field.
+</p>
+
+<p>
+Developing my CS 499 ePortfolio brought these different areas of knowledge together. I selected my Android Inventory Management application as the primary artifact because it provides a clear demonstration of my growth as a developer. Instead of presenting several unrelated projects, enhancing the same application across software design and engineering, algorithms and data structures, and databases allowed me to demonstrate how different areas of computer science contribute to one complete software system.
+</p>
+
+<p>
+The software design and engineering enhancement demonstrates my ability to evaluate an existing codebase and improve its architecture and functionality. The algorithms and data structures enhancement demonstrates my ability to think about how information is organized, processed, searched, sorted, and presented efficiently. The database enhancement demonstrates my ability to improve persistent data management and separate database responsibilities from other application logic.
+</p>
+
+<p>
+My professional goal after graduation is to begin a career in software engineering where I can continue strengthening my technical abilities while contributing to meaningful software projects. Although completing my degree represents an important milestone, I recognize that computer science requires continuous learning. Programming languages, frameworks, development tools, security threats, and industry practices will continue changing.
+</p>
+
+<p>
+This ePortfolio represents the progression of the skills I developed throughout my degree and provides tangible evidence of my ability to design, evaluate, enhance, and communicate computing solutions. Together, these components demonstrate my preparation to transition from a computer science student into a professional software environment. I am completing the program with stronger technical skills, a more developed security mindset, greater confidence in my problem-solving abilities, and an understanding that becoming an effective software engineer requires continuous improvement.
+</p>
+
+<div class="portfolio-links">
+    <h3>Explore My ePortfolio</h3>
+    <a href="code-review.html">CS 499 Code Review</a>
+    <a href="software-design.html">Software Design and Engineering Enhancement</a>
+    <a href="algorithms.html">Algorithms and Data Structures Enhancement</a>
+    <a href="databases.html">Database Enhancement</a>
+</div>
+
+</main>
+
+<footer>
+    <p>Jeremia Lim | CS 499 Computer Science Capstone</p>
+</footer>
+
+</body>
+</html>
