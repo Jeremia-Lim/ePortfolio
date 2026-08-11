@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Databases | Jeremia Lim</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f7fb;
+    color: #222;
+    line-height: 1.7;
+}
+
+header {
+    background: #202938;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+header p {
+    margin: 8px 0 0;
+    font-size: 18px;
+}
+
+nav {
+    background: white;
+    text-align: center;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+nav a {
+    color: #202938;
+    text-decoration: none;
+    margin: 0 13px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 950px;
+    margin: 40px auto;
+    background: white;
+    padding: 45px;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0,0,0,.07);
+}
+
+h2 {
+    color: #202938;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #35445d;
+    margin-top: 32px;
+}
+
+.artifact-box {
+    background: #f1f3f8;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+
+.artifact-button {
+    display: inline-block;
+    background: #202938;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 8px 8px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.artifact-button:hover {
+    opacity: .85;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+}
+
+@media (max-width: 700px) {
+    main {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Jeremia Lim</h1>
+    <p>Computer Science ePortfolio | Software Engineering</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="code-review.html">Code Review</a>
+    <a href="software-design.html">Software Design</a>
+    <a href="algorithms.html">Algorithms &amp; Data Structures</a>
+    <a href="databases.html">Databases</a>
+</nav>
+
+<main>
+
+<h2>Database Enhancement</h2>
+
+<p>
+This section of my ePortfolio presents the database enhancement completed for my Android Inventory Management application. The enhancement demonstrates my ability to improve persistent data storage, organize database responsibilities, and apply database concepts within a complete software application.
+</p>
+
+<div class="artifact-box">
+
+<h3>Artifact</h3>
+
+<p><strong>Android Inventory Management Application</strong></p>
+
+<p>
+The original application included local inventory storage and basic operations for adding, updating, displaying, and deleting inventory information. During CS 499, I enhanced the application's database layer to create a more structured and maintainable approach to persistent data management.
+</p>
+
+<a class="artifact-button"
+   href="https://github.com/Jeremia-Lim/InventoryApp-Original"
+   target="_blank">
+    View Original Artifact
+</a>
+
+<a class="artifact-button"
+   href="https://github.com/Jeremia-Lim/InventoryApp-Enhanced"
+   target="_blank">
+    View Database Enhancement
+</a>
+
+</div>
+
+<h2>Enhancement Narrative</h2>
+
+<p>
+The artifact selected for this database enhancement is my Android Inventory Management application, originally created during CS 360: Mobile Architecture and Programming. The application allows users to manage inventory information through features such as adding items, editing quantities, deleting items, and viewing stored inventory records.
+</p>
+
+<p>
+I selected this artifact because database functionality is central to the purpose of an inventory management system. Inventory information must remain available after the application is closed, and users must be able to reliably create, retrieve, update, and delete records. This made the project a strong opportunity to demonstrate my growth in database design and persistent data management.
+</p>
+
+<p>
+The original version of the application demonstrated basic local data storage, but revisiting the project during CS 499 allowed me to improve how database responsibilities were organized. Rather than treating persistence as a small supporting feature, I evaluated the database layer as an important part of the application's architecture.
+</p>
+
+<p>
+A major focus of the enhancement was improving the separation between application logic and data access. Organizing database operations into dedicated components makes the system easier to understand and maintain. It also reduces the amount of database-related logic that must be handled directly by user interface components.
+</p>
+
+<p>
+The enhanced implementation uses a more structured database architecture with dedicated data models and data access components. This approach supports common CRUD operations while making the relationship between application objects and stored records clearer.
+</p>
+
+<h3>Database Architecture</h3>
+
+<p>
+The enhancement strengthened my understanding of how database architecture affects the overall quality of an application. A well-organized persistence layer provides a clear way for the rest of the system to interact with stored data while reducing duplication and unnecessary dependencies.
+</p>
+
+<p>
+The use of a dedicated database class, entity model, and data access object demonstrates a more modular approach to persistence. The entity defines the structure of inventory records, the data access object defines database operations, and the database class provides the connection between the application and persistent storage.
+</p>
+
+<p>
+This structure creates stronger separation of concerns and makes the database implementation easier to expand. Future features could build on this architecture without requiring major changes to unrelated parts of the application.
+</p>
+
+<h3>CRUD Operations and Persistent Data</h3>
+
+<p>
+Inventory management depends on reliable CRUD operations. Users must be able to create new inventory records, read existing information, update quantities or item details, and delete records that are no longer needed.
+</p>
+
+<p>
+The enhancement allowed me to apply these concepts in a more structured way. Database operations are defined explicitly and can be accessed by the application through dedicated interfaces rather than being scattered throughout the user interface code.
+</p>
+
+<p>
+Persistent data management also requires considering how changes are reflected throughout the application. When inventory records are added, edited, or removed, the interface should accurately represent the current state of the stored data. This reinforced the relationship between database design and application behavior.
+</p>
+
+<h3>Course Outcomes</h3>
+
+<p>
+This enhancement supports the CS 499 course outcome involving the use of well-founded computing techniques, skills, and tools to implement solutions that deliver value and accomplish industry-specific goals. Improving the application's persistence layer demonstrates my ability to use database tools and architectural practices to create a more maintainable software solution.
+</p>
+
+<p>
+The enhancement also supports the outcome involving the design and evaluation of computing solutions. Database design requires evaluating how information should be represented, how different application components access that information, and how design decisions affect maintainability and scalability.
+</p>
+
+<p>
+Security was also an important consideration. Database systems store information that may be sensitive or important to application functionality. My secure coding coursework influenced how I think about validating input, limiting unnecessary access, protecting stored information, and avoiding unsafe database practices.
+</p>
+
+<h3>Reflection</h3>
+
+<p>
+Completing the database enhancement strengthened my understanding of the relationship between application architecture and persistent data. Earlier in my coursework, I often viewed database operations primarily as individual tasks such as inserting or retrieving records. This enhancement helped me view the database as a complete layer within the software system.
+</p>
+
+<p>
+One challenge involved updating the application while maintaining compatibility with the existing project structure and dependencies. Database changes can affect multiple parts of an application, including data models, activities, adapters, and project configuration. Troubleshooting these interactions required careful testing and incremental changes.
+</p>
+
+<p>
+The process also reinforced the importance of separating responsibilities. When database access is organized clearly, changes are easier to understand and problems are easier to isolate. This improves maintainability and makes future development more manageable.
+</p>
+
+<p>
+Overall, the database enhancement demonstrates my growth in designing and implementing persistent data solutions. I am more comfortable working with entities, data access objects, CRUD operations, application databases, and the interaction between stored data and user-facing software components. These skills will be valuable in professional software development because most modern applications depend on reliable and maintainable data management.
+</p>
+
+</main>
+
+<footer>
+    <p>Jeremia Lim | CS 499 Computer Science Capstone</p>
+</footer>
+
+</body>
+</html>
